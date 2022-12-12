@@ -16,7 +16,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.17.1
+          deno-version: v1.28.3
       - run: cd deno && deno run -A dnt.ts
       - name: Use Node.js 16
         uses: actions/setup-node@v3

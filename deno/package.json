@@ -7,7 +7,5 @@
   "scripts": {
     "build": "deno run -A dnt.ts",
     "test": "deno test --ignore=packages"
-  },
-  "author": "mizchi",
-  "license": "MIT"
+  }
 }

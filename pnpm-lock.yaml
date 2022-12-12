@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 importers:
 
@@ -27,12 +27,12 @@ importers:
 
   deno/packages/deno-pkg-node:
     specifiers:
-      '@deno/shim-deno': ~0.1.1
-      '@types/node': 16.11.1
-      chalk: 4.1.2
+      '@deno/shim-deno': ~0.11.0
+      '@types/node': ^18.11.9
+      chalk: ^4.1.2
     devDependencies:
-      '@deno/shim-deno': 0.1.2
-      '@types/node': 16.11.1
+      '@deno/shim-deno': 0.11.0
+      '@types/node': 18.11.13
       chalk: 4.1.2
 
   packages/helper:
@@ -40,9 +40,14 @@ importers:
 
 packages:
 
-  /@deno/shim-deno/0.1.2:
-    resolution: {integrity: sha512-qoNVXCK5ATX6k6Oq0qWVTQpSwT2XE+KPymNTV1CTQhL3KRqR4KGlCWM2M/xW8U+KwGv8KjWR4S2lOKcspRUg9A==}
+  /@deno/shim-deno-test/0.4.0:
+    resolution: {integrity: sha512-oYWcD7CpERZy/TXMTM9Tgh1HD/POHlbY9WpzmAk+5H8DohcxG415Qws8yLGlim3EaKBT2v3lJv01x4G0BosnaQ==}
+    dev: true
+
+  /@deno/shim-deno/0.11.0:
+    resolution: {integrity: sha512-z5FRYleehfz1Z0Wp9jilB98cJRGV2HYiLN0FZu1/xwLrQk+hk5VaNKp1nEoyGrUM4MLruTlnhEbqHJwxfnbPLw==}
     dependencies:
+      '@deno/shim-deno-test': 0.4.0
       which: 2.0.2
     dev: true
 
@@ -56,8 +61,8 @@ packages:
     resolution: {integrity: sha512-/ceqdqeRraGolFTcfoXNiqjyQhZzbINDngeoAq9GoHa8PPK1yNzTaxWjA6BFWp5Ua9JpXEMSS4s5i9tS0hOJtw==}
     dev: true
 
-  /@types/node/16.11.1:
-    resolution: {integrity: sha512-PYGcJHL9mwl1Ek3PLiYgyEKtwTMmkMw4vbiyz/ps3pfdRYLVv+SN7qHVAImrjdAXxgluDEw6Ph4lyv+m9UpRmA==}
+  /@types/node/18.11.13:
+    resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==}
     dev: true
 
   /ansi-styles/4.3.0:
@@ -308,7 +313,7 @@ packages:
     dev: true
 
   /isexe/2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
   /local-pkg/0.4.1:
